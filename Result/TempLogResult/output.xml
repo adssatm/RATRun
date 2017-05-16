@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170227 12:20:58.607" generator="Robot 3.0.1 (Python 2.7.9 on win32)">
+<suite source="T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Library\RATRobot\RATRun_pcm\RATRun.robot" id="s1" name="RATRun">
+<test id="s1-t1" name="Rule of RAT Application Testing">
+<kw type="setup" name="Prepare data">
+<kw name="Get Config Path" library="RATLibrary">
+<assign>
+<var>${PATHLOCAL}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.135" level="INFO">Config path := T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Config</msg>
+<msg timestamp="20170227 12:21:01.135" level="INFO">${PATHLOCAL} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Config</msg>
+<status status="PASS" endtime="20170227 12:21:01.135" starttime="20170227 12:21:01.135"></status>
+</kw>
+<kw name="Get Result Path" library="RATLibrary">
+<assign>
+<var>${RESULTPATH}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.135" level="INFO">Result path := T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result</msg>
+<msg timestamp="20170227 12:21:01.135" level="INFO">${RESULTPATH} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result</msg>
+<status status="PASS" endtime="20170227 12:21:01.135" starttime="20170227 12:21:01.135"></status>
+</kw>
+<kw name="Get Config File" library="RATLibrary">
+<assign>
+<var>${CONFIG}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.135" level="INFO">Config file with path := T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Config\Configuration.xlsx</msg>
+<msg timestamp="20170227 12:21:01.135" level="INFO">${CONFIG} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Config\Configuration.xlsx</msg>
+<status status="PASS" endtime="20170227 12:21:01.135" starttime="20170227 12:21:01.135"></status>
+</kw>
+<kw name="Get Run Project" library="RATLibrary">
+<assign>
+<var>${PROJECT}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.259" level="INFO">Project testing := PCM</msg>
+<msg timestamp="20170227 12:21:01.259" level="INFO">${PROJECT} = PCM</msg>
+<status status="PASS" endtime="20170227 12:21:01.259" starttime="20170227 12:21:01.135"></status>
+</kw>
+<kw name="Get Run Testcase" library="RATLibrary">
+<assign>
+<var>@{TESTCASE}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.353" level="INFO">Merge_All_PCM_TestCase.xlsx</msg>
+<msg timestamp="20170227 12:21:01.353" level="INFO">@{TESTCASE} = [ Merge_All_PCM_TestCase.xlsx ]</msg>
+<status status="PASS" endtime="20170227 12:21:01.353" starttime="20170227 12:21:01.259"></status>
+</kw>
+<kw name="Get Run Location" library="RATLibrary">
+<assign>
+<var>${TESTLC}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.415" level="INFO">Location testing := LOCAL</msg>
+<msg timestamp="20170227 12:21:01.415" level="INFO">${TESTLC} = LOCAL</msg>
+<status status="PASS" endtime="20170227 12:21:01.415" starttime="20170227 12:21:01.353"></status>
+</kw>
+<kw name="Get Run Tester" library="RATLibrary">
+<assign>
+<var>${TESTER}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.478" level="INFO">Tester := Chayj130</msg>
+<msg timestamp="20170227 12:21:01.478" level="INFO">${TESTER} = Chayj130</msg>
+<status status="PASS" endtime="20170227 12:21:01.478" starttime="20170227 12:21:01.415"></status>
+</kw>
+<kw name="Create Folder" library="RATLibrary">
+<arguments>
+<arg>${RESULTPATH}</arg>
+<arg>${PROJECT}</arg>
+</arguments>
+<assign>
+<var>${LOGPATH}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.478" level="INFO">T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM</msg>
+<msg timestamp="20170227 12:21:01.478" level="INFO">${LOGPATH} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM</msg>
+<status status="PASS" endtime="20170227 12:21:01.478" starttime="20170227 12:21:01.478"></status>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${PROJECT}</arg>
+<arg>${PROJECT}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:01.478" level="INFO">${PROJECT} = PCM</msg>
+<status status="PASS" endtime="20170227 12:21:01.478" starttime="20170227 12:21:01.478"></status>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>@{TESTCASE}</arg>
+<arg>@{TESTCASE}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:01.478" level="INFO">@{TESTCASE} = [ Merge_All_PCM_TestCase.xlsx ]</msg>
+<status status="PASS" endtime="20170227 12:21:01.478" starttime="20170227 12:21:01.478"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${TESTER}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:01.478" level="INFO">${TESTER} = Chayj130</msg>
+<status status="PASS" endtime="20170227 12:21:01.478" starttime="20170227 12:21:01.478"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${LOGPATH}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:01.478" level="INFO">${LOGPATH} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM</msg>
+<status status="PASS" endtime="20170227 12:21:01.478" starttime="20170227 12:21:01.478"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${TESTLC}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:01.478" level="INFO">${TESTLC} = LOCAL</msg>
+<status status="PASS" endtime="20170227 12:21:01.478" starttime="20170227 12:21:01.478"></status>
+</kw>
+<kw name="Get Run Global Parameter" library="RATLibrary">
+<msg timestamp="20170227 12:21:01.587" level="INFO">GOL_PCM
+T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Config\GlobalParameter.xlsx
+dicgolparam := {}</msg>
+<status status="PASS" endtime="20170227 12:21:01.587" starttime="20170227 12:21:01.478"></status>
+</kw>
+<kw name="Create Dictionary Assignment" library="RATLibrary">
+<status status="PASS" endtime="20170227 12:21:01.587" starttime="20170227 12:21:01.587"></status>
+</kw>
+<status status="PASS" endtime="20170227 12:21:01.587" starttime="20170227 12:21:01.135"></status>
+</kw>
+<kw type="for" name="${ICASE} IN [ @{TESTCASE} ]">
+<kw type="foritem" name="${ICASE} = Merge_All_PCM_TestCase.xlsx">
+<kw name="RAT Step test">
+<arguments>
+<arg>${PROJECT}</arg>
+<arg>${ICASE}</arg>
+</arguments>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>PROJECT RUN : ${PROJECT}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:01.587" level="INFO">PROJECT RUN : PCM</msg>
+<status status="PASS" endtime="20170227 12:21:01.587" starttime="20170227 12:21:01.587"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>TEST CASE : ${TESTCASE}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:01.587" level="INFO">TEST CASE : Merge_All_PCM_TestCase.xlsx</msg>
+<status status="PASS" endtime="20170227 12:21:01.587" starttime="20170227 12:21:01.587"></status>
+</kw>
+<kw name="Create Report Id" library="RATLibrary">
+<assign>
+<var>${REPORTID}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.587" level="INFO">${REPORTID} = 20170227122101587000</msg>
+<status status="PASS" endtime="20170227 12:21:01.587" starttime="20170227 12:21:01.587"></status>
+</kw>
+<kw name="Create Folder" library="RATLibrary">
+<arguments>
+<arg>${LOGPATH}</arg>
+<arg>${REPORTID}</arg>
+</arguments>
+<assign>
+<var>${RUNLOGPATH}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.634" level="INFO">T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000</msg>
+<msg timestamp="20170227 12:21:01.634" level="INFO">${RUNLOGPATH} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000</msg>
+<status status="PASS" endtime="20170227 12:21:01.634" starttime="20170227 12:21:01.587"></status>
+</kw>
+<kw name="Create Folder" library="RATLibrary">
+<arguments>
+<arg>${RUNLOGPATH}</arg>
+<arg>Images</arg>
+</arguments>
+<assign>
+<var>${RUNLOGIMG}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.649" level="INFO">T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\Images</msg>
+<msg timestamp="20170227 12:21:01.649" level="INFO">${RUNLOGIMG} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\Images</msg>
+<status status="PASS" endtime="20170227 12:21:01.649" starttime="20170227 12:21:01.634"></status>
+</kw>
+<kw name="Create Folder" library="RATLibrary">
+<arguments>
+<arg>${RUNLOGPATH}</arg>
+<arg>LogFile</arg>
+</arguments>
+<assign>
+<var>${RUNLOGFILE}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.665" level="INFO">T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\LogFile</msg>
+<msg timestamp="20170227 12:21:01.665" level="INFO">${RUNLOGFILE} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\LogFile</msg>
+<status status="PASS" endtime="20170227 12:21:01.665" starttime="20170227 12:21:01.649"></status>
+</kw>
+<kw name="Create Text Logger" library="RATLibrary">
+<arguments>
+<arg>${RUNLOGPATH}</arg>
+</arguments>
+<assign>
+<var>${TXTLOG}</var>
+</assign>
+<msg timestamp="20170227 12:21:01.681" level="INFO">${TXTLOG} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\\TempLogEvent.txt</msg>
+<status status="PASS" endtime="20170227 12:21:01.681" starttime="20170227 12:21:01.665"></status>
+</kw>
+<kw name="Create Excel Logger" library="RATLibrary">
+<arguments>
+<arg>${RUNLOGPATH}</arg>
+<arg>${TESTLC}</arg>
+</arguments>
+<assign>
+<var>${XLSLOG}</var>
+</assign>
+<msg timestamp="20170227 12:21:02.773" level="INFO">${XLSLOG} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\\20170227122101587000_ReportLog.xlsx</msg>
+<status status="PASS" endtime="20170227 12:21:02.773" starttime="20170227 12:21:01.681"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${REPORTID}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:02.773" level="INFO">${REPORTID} = 20170227122101587000</msg>
+<status status="PASS" endtime="20170227 12:21:02.773" starttime="20170227 12:21:02.773"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${TXTLOG}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:02.773" level="INFO">${TXTLOG} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\\TempLogEvent.txt</msg>
+<status status="PASS" endtime="20170227 12:21:02.773" starttime="20170227 12:21:02.773"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${XLSLOG}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:02.773" level="INFO">${XLSLOG} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\\20170227122101587000_ReportLog.xlsx</msg>
+<status status="PASS" endtime="20170227 12:21:02.773" starttime="20170227 12:21:02.773"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${RUNLOGIMG}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:02.773" level="INFO">${RUNLOGIMG} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\Images</msg>
+<status status="PASS" endtime="20170227 12:21:02.773" starttime="20170227 12:21:02.773"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${RUNLOGFILE}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:02.773" level="INFO">${RUNLOGFILE} = T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\Result\PCM\20170227122101587000\LogFile</msg>
+<status status="PASS" endtime="20170227 12:21:02.773" starttime="20170227 12:21:02.773"></status>
+</kw>
+<kw name="Add element item to dictionary">
+<arguments>
+<arg>${PROJECT}</arg>
+</arguments>
+<kw name="Add Element To Dictionary" library="RATLibrary">
+<arguments>
+<arg>${PROJECT}</arg>
+</arguments>
+<assign>
+<var>&amp;{ELEMENT}</var>
+</assign>
+<msg timestamp="20170227 12:21:02.975" level="INFO">T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\TestCase\PCM\PCM_ElementItem.xlsx</msg>
+<msg timestamp="20170227 12:21:02.991" level="INFO">&amp;{ELEMENT} = { CommuDataTable=xpath=//div[@id='Control_appDotcoreNumUICSRTabControlProfileDottabsopen4closeDotcontrolsopen0closeDotcontrolsopen0closeDiv_mainlistDiv'] | CommuToDateCarlendar=xpath=//a[@id='Control_...</msg>
+<status status="PASS" endtime="20170227 12:21:02.991" starttime="20170227 12:21:02.773"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>&amp;{ELEMENT}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:02.991" level="INFO">&amp;{ELEMENT} = { CommuDataTable=xpath=//div[@id='Control_appDotcoreNumUICSRTabControlProfileDottabsopen4closeDotcontrolsopen0closeDotcontrolsopen0closeDiv_mainlistDiv'] | CommuToDateCarlendar=xpath=//a[@id='Control_...</msg>
+<status status="PASS" endtime="20170227 12:21:02.991" starttime="20170227 12:21:02.991"></status>
+</kw>
+<status status="PASS" endtime="20170227 12:21:02.991" starttime="20170227 12:21:02.773"></status>
+</kw>
+<kw name="Get Iteration" library="RATLibrary">
+<arguments>
+<arg>${PROJECT}</arg>
+<arg>${TESTCASE}</arg>
+</arguments>
+<assign>
+<var>@{ITERATION}</var>
+</assign>
+<msg timestamp="20170227 12:21:03.178" level="INFO">Iteration file path : T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\TestCase\PCM\Merge_All_PCM_TestCase.xlsx
+Iteration rows : 2
+Iteration columns : 16</msg>
+<msg timestamp="20170227 12:21:03.178" level="INFO">@{ITERATION} = [ NO=1|MobileNo=0935853707|UsernameCSW=kanokwah|PasswordCSW=Zonoot0217|MSISDN=66935853707|SMA=DataOT.28.4|UsernameCSR=pong|PasswordCSR=pong|FromDate=24/02/2017|ToDate=24/02/2017|Marketing_Activity=Dat...</msg>
+<status status="PASS" endtime="20170227 12:21:03.178" starttime="20170227 12:21:02.991"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</arg>
+</arguments>
+<status status="PASS" endtime="20170227 12:21:03.178" starttime="20170227 12:21:03.178"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>=======================================================</arg>
+</arguments>
+<status status="PASS" endtime="20170227 12:21:03.178" starttime="20170227 12:21:03.178"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Run Test Case : [${TESTCASE}]</arg>
+</arguments>
+<status status="PASS" endtime="20170227 12:21:03.178" starttime="20170227 12:21:03.178"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>=======================================================</arg>
+</arguments>
+<status status="PASS" endtime="20170227 12:21:03.178" starttime="20170227 12:21:03.178"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>-------------------- Testing Start --------------------</arg>
+</arguments>
+<status status="PASS" endtime="20170227 12:21:03.178" starttime="20170227 12:21:03.178"></status>
+</kw>
+<kw type="for" name="${IITER} IN [ @{ITERATION} ]">
+<kw type="foritem" name="${IITER} = NO=1|MobileNo=0935853707|UsernameCSW=kanokwah|PasswordCSW=Zonoot0217|MSISDN=66935853707|SMA=DataOT.28.4|UsernameCSR=pong|PasswordCSR=pong|FromDate=24/02/2017|ToDate=24/02/2017|Marketing_Activity=DataO...">
+<kw name="Set Test Variable" library="BuiltIn">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>${TESTRESULT}</arg>
+<arg>True</arg>
+</arguments>
+<msg timestamp="20170227 12:21:03.178" level="INFO">${TESTRESULT} = True</msg>
+<status status="PASS" endtime="20170227 12:21:03.178" starttime="20170227 12:21:03.178"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${GOLITER}</arg>
+<arg>${IITER}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:03.194" level="INFO">${GOLITER} = NO=1|MobileNo=0935853707|UsernameCSW=kanokwah|PasswordCSW=Zonoot0217|MSISDN=66935853707|SMA=DataOT.28.4|UsernameCSR=pong|PasswordCSR=pong|FromDate=24/02/2017|ToDate=24/02/2017|Marketing_Activity=DataO...</msg>
+<status status="PASS" endtime="20170227 12:21:03.194" starttime="20170227 12:21:03.178"></status>
+</kw>
+<kw name="Get Sequence Iteration" library="RATLibrary">
+<arguments>
+<arg>${GOLITER}</arg>
+</arguments>
+<assign>
+<var>${ITERSEQ}</var>
+</assign>
+<msg timestamp="20170227 12:21:03.194" level="INFO">${ITERSEQ} = IT1</msg>
+<status status="PASS" endtime="20170227 12:21:03.194" starttime="20170227 12:21:03.194"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>---------------- [ ${ITERSEQ} ] -------------------</arg>
+</arguments>
+<status status="PASS" endtime="20170227 12:21:03.194" starttime="20170227 12:21:03.194"></status>
+</kw>
+<kw name="Case step">
+<arguments>
+<arg>${PROJECT}</arg>
+<arg>${TESTCASE}</arg>
+<arg>${TESTRESULT}</arg>
+</arguments>
+<kw name="Get Test Step" library="RATLibrary">
+<arguments>
+<arg>${PROJECT}</arg>
+<arg>${TESTCASE}</arg>
+</arguments>
+<assign>
+<var>@{TESTSTEP}</var>
+</assign>
+<msg timestamp="20170227 12:21:14.691" level="INFO">T:\08) Project 2017\00.) RATRun Framework\02.RATRun_PCM\RATFramework\TestCase\PCM\Merge_All_PCM_TestCase.xlsx
+163</msg>
+<msg timestamp="20170227 12:21:14.691" level="INFO">@{TESTSTEP} = [ 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42...</msg>
+<status status="PASS" endtime="20170227 12:21:14.691" starttime="20170227 12:21:03.194"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>@{TESTSTEP}</arg>
+<arg>@{TESTSTEP}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:14.691" level="INFO">@{TESTSTEP} = [ 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30 | 31 | 32 | 33 | 34 | 35 | 36 | 37 | 38 | 39 | 40 | 41 | 42...</msg>
+<status status="PASS" endtime="20170227 12:21:14.691" starttime="20170227 12:21:14.691"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${STEPJUMPER}</arg>
+<arg>None</arg>
+</arguments>
+<msg timestamp="20170227 12:21:14.691" level="INFO">${STEPJUMPER} = None</msg>
+<status status="PASS" endtime="20170227 12:21:14.691" starttime="20170227 12:21:14.691"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${CONDITIONJUMP}</arg>
+<arg>${TRUE}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:14.691" level="INFO">${CONDITIONJUMP} = True</msg>
+<status status="PASS" endtime="20170227 12:21:14.691" starttime="20170227 12:21:14.691"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FLAGRUNRESULT}</arg>
+<arg>${TRUE}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:14.707" level="INFO">${FLAGRUNRESULT} = True</msg>
+<status status="PASS" endtime="20170227 12:21:14.707" starttime="20170227 12:21:14.691"></status>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>${FALGJUMPSTEP}</arg>
+<arg>${FALSE}</arg>
+</arguments>
+<msg timestamp="20170227 12:21:14.707" level="INFO">${FALGJUMPSTEP} = False</msg>
+<status status="PASS" endtime="20170227 12:21:14.707" starttime="20170227 12:21:14.707"></status>
+</kw>
+<kw name="Get Sequence Iteration" library="RATLibrary">
+<arguments>
+<arg>${GOLITER}</arg>
+</arguments>
+<assign>
+<var>${ITERSEQ}</var>
+</assign>
+<msg timestamp="20170227 12:21:14.707" level="INFO">${ITERSEQ} = IT1</msg>
+<status status="PASS" endtime="20170227 12:21:14.707" starttime="20170227 12:21:14.707"></status>
+</kw>
+<kw name="Get Test Scenario Name">
+<arguments>
+<arg>${GOLITER}</arg>
+</arguments>
+<assign>
+<var>${SCENARIONAME}=</var>
+</assign>
+<msg timestamp="20170227 12:21:14.722" level="FAIL">No keyword with name 'Get Test Scenario Name' found.</msg>
+<status status="FAIL" endtime="20170227 12:21:14.722" starttime="20170227 12:21:14.722"></status>
+</kw>
+<status status="FAIL" endtime="20170227 12:21:14.722" starttime="20170227 12:21:03.194"></status>
+</kw>
+<status status="FAIL" endtime="20170227 12:21:14.722" starttime="20170227 12:21:03.178"></status>
+</kw>
+<status status="FAIL" endtime="20170227 12:21:14.722" starttime="20170227 12:21:03.178"></status>
+</kw>
+<status status="FAIL" endtime="20170227 12:21:14.722" starttime="20170227 12:21:01.587"></status>
+</kw>
+<status status="FAIL" endtime="20170227 12:21:14.722" starttime="20170227 12:21:01.587"></status>
+</kw>
+<status status="FAIL" endtime="20170227 12:21:14.722" starttime="20170227 12:21:01.587"></status>
+</kw>
+<status status="FAIL" endtime="20170227 12:21:14.722" critical="yes" starttime="20170227 12:21:01.135">No keyword with name 'Get Test Scenario Name' found.</status>
+</test>
+<status status="FAIL" endtime="20170227 12:21:14.722" starttime="20170227 12:20:58.607"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="RATRun" pass="0">RATRun</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
